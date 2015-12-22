@@ -6,3 +6,6 @@ DS.RESTAdapter.reopen(
   headers:
     "X-CSRF-Token": $('meta[name="csrf-token"]').attr('content')
 )
+
+App.Store = DS.Store.extend()
+App.ApplicationAdapter = DS.ActiveModelAdapter.extend()
