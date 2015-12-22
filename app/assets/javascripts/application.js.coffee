@@ -7,9 +7,4 @@
 #= require app
 
 # for more details see: http://emberjs.com/guides/application/
-window.App = Ember.Application.create({
-  LOG_TRANSITINS: true
-  LOG_TRANSITINS_INTERNAL: true
-  LOG_VIEW_LOOKUPS: true
-})
-
+window.App = Ember.Application.create(rootElement: '#ember-app')
